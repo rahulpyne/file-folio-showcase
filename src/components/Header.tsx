@@ -13,11 +13,8 @@ const Header = () => {
           <a href="#about" className="text-sm hover:opacity-70 transition-opacity">
             About
           </a>
-          <a href="#experience" className="text-sm hover:opacity-70 transition-opacity">
-            Experience
-          </a>
-          <a href="#education" className="text-sm hover:opacity-70 transition-opacity">
-            Education
+          <a href="#journey" className="text-sm hover:opacity-70 transition-opacity">
+            Journey
           </a>
           <a href="#skills" className="text-sm hover:opacity-70 transition-opacity">
             Skills

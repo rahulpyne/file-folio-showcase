@@ -1,4 +1,28 @@
+import { useEffect, useRef, useState } from "react";
+
 const Skills = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   const skillCategories = [
     {
       category: "Product & Strategy",
@@ -47,11 +71,13 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 border-b border-border">
+    <section id="skills" ref={sectionRef} className="py-24 px-6 border-b border-border">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid md:grid-cols-12 gap-12">
+        <div className={`grid md:grid-cols-12 gap-12 transition-all duration-700 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}>
           <div className="md:col-span-3">
-            <span className="section-number text-2xl">03</span>
+            <span className="section-number text-2xl">02</span>
             <h2 className="text-4xl md:text-5xl font-serif font-light mt-4">
               Skills
             </h2>

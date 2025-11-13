@@ -1,20 +1,18 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+import Journey from "@/components/Journey";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
       <main>
         <Hero />
         <About />
-        <Experience />
-        <Education />
+        <Journey />
         <Skills />
       </main>
       <Footer />
