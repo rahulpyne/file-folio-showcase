@@ -3,7 +3,6 @@ import microsoftLogo from "@/assets/logos/microsoft.png";
 import awsLogo from "@/assets/logos/aws.png";
 import amazonLogo from "@/assets/logos/amazon.png";
 import ubcLogo from "@/assets/logos/ubc-sauder.png";
-import asuLogo from "@/assets/logos/asu.png";
 
 const Journey = () => {
   const timelineItems = [
@@ -12,12 +11,12 @@ const Journey = () => {
       company: "UBC Sauder School of Business",
       logo: ubcLogo,
       location: "Vancouver, BC",
-      period: "2025 - 2027 (In Progress)",
+      period: "August 2025 - December 2026",
       role: "Master of Business Administration (MBA)",
       details: [
+        "Focus: Business Administration and Management",
         "Vice President Student Development | MBA Council 2027",
         "Leading Tech & Leadership Coffee Chat Series connecting 100+ students",
-        "Focus: Product Management, Entrepreneurship, and Market Strategy",
       ],
     },
     {
@@ -28,8 +27,8 @@ const Journey = () => {
       period: "September 2025 - Present",
       role: "Vice President Student Development | MBA Council 2027",
       achievements: [
-        "Launched and leading the 'Tech & Leadership Coffee Chat Series' on LinkedIn, connecting 100+ students with startup founders and industry experts.",
-        "Directing multi-stakeholder initiatives focused on student inclusion and professional growth.",
+        "Launched and leading the 'Tech & Leadership Coffee Chat Series' on LinkedIn connecting 100+ students with startup founders and industry experts to cultivate community learning and entrepreneurial thinking.",
+        "Directing and coordinating multi-stakeholder initiatives focused on student inclusion and professional growth, aligning academic, industry, and alumni networks to deliver measurable engagement outcomes.",
       ],
     },
     {
@@ -39,9 +38,9 @@ const Journey = () => {
       period: "March 2025 - May 2025",
       role: "Senior Software Engineer AI",
       achievements: [
-        "Designed and deployed an agentic AI service achieving 95% accuracy in natural-language-to-SQL translation.",
-        "Partnered with founders and enterprise clients to define MVP milestones.",
-        "Built ontology and benchmarking frameworks to evaluate AI precision and reliability.",
+        "Designed and deployed an agentic AI service that achieved 95% accuracy in natural-language-to-SQL translation, enhancing client data accessibility and decision automation.",
+        "Partnered directly with founders and enterprise clients to define MVP milestones, aligning technical innovation with measurable business outcomes.",
+        "Built ontology and benchmarking frameworks to evaluate AI precision and reliability, driving early-stage adoption and strengthening investor confidence.",
       ],
     },
     {
@@ -52,9 +51,9 @@ const Journey = () => {
       period: "February 2022 - January 2025",
       role: "Senior Software Engineer",
       achievements: [
-        "Directed end-to-end integration of Microsoft Purview's Label Product, driving 4x sales growth.",
-        "Partnered with global teams to accelerate enterprise adoption by 28%.",
-        "Improved release velocity by 12% and service reliability by 8%.",
+        "Directed the end-to-end integration of Microsoft Purview's Label Product with Microsoft Security, leading a 6-member team and driving 4x sales growth via bundled licensing through improved compliance alignment.",
+        "Partnered with global product, compliance, and data teams to translate business goals into technical roadmaps, aligning product vision and regulatory strategy—accelerating enterprise adoption by 28%.",
+        "Mentored junior developers and coordinated cross-functional stakeholders to deliver high-impact releases that strengthened enterprise data governance—improving release velocity by 12% and service reliability by 8%.",
       ],
     },
     {
@@ -65,44 +64,67 @@ const Journey = () => {
       period: "April 2021 - January 2022",
       role: "Software Development Engineer II",
       achievements: [
-        "Led development of 'Pending Agent Status' feature for Amazon Connect.",
-        "Designed scalable microservices architecture supporting 500K+ concurrent calls with 99.9% uptime.",
-        "Reduced missed customer calls by 3% under peak traffic conditions.",
-      ],
-    },
-    {
-      type: "education" as const,
-      company: "Arizona State University",
-      logo: asuLogo,
-      location: "Tempe, AZ",
-      period: "2017 - 2019",
-      role: "Master of Science in Computer Science",
-      details: [
-        "Specialization: Artificial Intelligence and Machine Learning",
-        "Relevant Coursework: Data Mining, Cloud Computing, Statistical Machine Learning",
+        "Led end-to-end development of the 'Pending Agent Status' feature for Amazon Connect, a critical enhancement that optimized real-time agent availability and reduced missed customer calls by 3% under peak traffic conditions.",
+        "Architected and implemented a data pipeline for Workforce Management Service, integrating hot and cold data streams across S3 and real-time schedulers to enable predictive workforce insights and improve forecast accuracy by 20%.",
+        "Collaborated with product and operations leaders to translate technical performance metrics into process-improvement strategies, directly influencing customer satisfaction scores.",
       ],
     },
     {
       type: "experience" as const,
-      company: "Auger Inc.",
-      location: "Remote",
-      period: "May 2019 - April 2021",
-      role: "Founding Engineer",
+      company: "Amazon",
+      logo: amazonLogo,
+      location: "Greater Seattle Area",
+      period: "July 2018 - March 2021",
+      role: "Software Developer Engineer",
       achievements: [
-        "Built and scaled an AI-powered recruiting platform using machine learning.",
-        "Developed custom NLP pipeline for resume parsing, improving match quality by 40%.",
-        "Collaborated with founders to define product strategy and technical roadmaps.",
+        "Operational development across 4 CI/CD distributed asynchronous micro-services in more than 9 regions that handles omni-channel routing of calls, chats, work-items between agents and customers.",
+        "Led the investigation and reduction of missed call related bugs of Amazon Connect from 3% to 1%.",
+        "Developed an automated load test component for testing persistent Websocket connections and sending topic-based messages via SQS and SNS used in CI/CD pipeline.",
       ],
     },
     {
       type: "education" as const,
-      company: "Visvesvaraya Technological University",
+      company: "Northeastern University",
+      location: "Boston, MA",
+      period: "2016 - 2018",
+      role: "Master's Degree in Computer Science",
+      details: [
+        "Focus: Advanced Computer Science",
+        "Head Graduate Teaching Assistant for CS-5010 Programming Design Paradigm",
+      ],
+    },
+    {
+      type: "experience" as const,
+      company: "Amazon",
+      logo: amazonLogo,
+      location: "Greater Seattle Area",
+      period: "May 2017 - August 2017",
+      role: "Software Developer Engineer Intern",
+      achievements: [
+        "Analyzed team requirements and designed a solution for load balancing between multiple server requests.",
+        "Automated the process of data loading from Data warehouse to AWS RDS instance using Python, AWS Lambda, AWS DynamoDB and AWS S3.",
+      ],
+    },
+    {
+      type: "experience" as const,
+      company: "Cognizant",
+      location: "India",
+      period: "December 2013 - August 2016",
+      role: "Programmer Analyst",
+      achievements: [
+        "Banking and Financial Domain - Created web based application pages using HTML5, JavaScript, JSON, AJAX, jQuery, Angular JS and Advanced Java with Struts framework and Oracle 11g database.",
+        "Developed numerous Web Services for extracting and manipulating data from inter-applications using SOAP and REST protocols.",
+        "Worked extensively on PL/SQL, created procedures, cursors, packages and triggers.",
+      ],
+    },
+    {
+      type: "education" as const,
+      company: "West Bengal University of Technology, Kolkata",
       location: "India",
       period: "2009 - 2013",
-      role: "Bachelor of Engineering in Computer Science",
+      role: "Bachelor's Degree in Computer Science and Engineering",
       details: [
         "First Class with Distinction",
-        "Focus: Software Engineering and Data Structures",
       ],
     },
   ];
