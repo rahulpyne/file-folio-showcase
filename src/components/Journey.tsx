@@ -2,7 +2,9 @@ import Timeline from "./Timeline";
 import microsoftLogo from "@/assets/logos/microsoft.png";
 import awsLogo from "@/assets/logos/aws.png";
 import amazonLogo from "@/assets/logos/amazon.png";
-import ubcLogo from "@/assets/logos/ubc-sauder.png";
+import ubcLogo from "@/assets/logos/ubc-sauder-official.png";
+import northeasternLogo from "@/assets/logos/northeastern.png";
+import cognizantLogo from "@/assets/logos/cognizant-official.png";
 
 const Journey = () => {
   const timelineItems = [
@@ -85,6 +87,7 @@ const Journey = () => {
     {
       type: "education" as const,
       company: "Northeastern University",
+      logo: northeasternLogo,
       location: "Boston, MA",
       period: "2016 - 2018",
       role: "Master's Degree in Computer Science",
@@ -108,6 +111,7 @@ const Journey = () => {
     {
       type: "experience" as const,
       company: "Cognizant",
+      logo: cognizantLogo,
       location: "India",
       period: "December 2013 - August 2016",
       role: "Programmer Analyst",
